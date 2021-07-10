@@ -3,6 +3,6 @@ test_that("an unweighted associative network can be generated", {
   targets <- c(2,4,5,6,3,4,5,6,1,4,5,6)
   expect_equal(
     create_unweighted_network(cues, targets),
-    rbind(c(F,T,F), c(F,F,T), c(T,F,F)),
-    ignore_attr = TRUE)
+    matrix(c(F,F,T,T,F,F,F,T,F), nrow = length(unique(cues)), dimnames = list(unique(cues), unique(cues)))
+  )
 })

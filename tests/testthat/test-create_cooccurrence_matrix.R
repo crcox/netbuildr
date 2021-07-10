@@ -7,8 +7,8 @@ test_that("tabulation works with multiple transcripts", {
   window_size <- 3
   expect_equal(
     create_cooccurrence_matrix(tokens, window_size, types),
-    rbind(c(0, 0, 2), c(4, 0, 0), c(0, 2, 0)),
-    ignore_attr = TRUE)
+    matrix(c(0, 4, 0, 0, 0, 2, 2, 0, 0), nrow = length(types), dimnames = list(types, types))
+  )
 })
 
 test_that("tabulation works when types are not specified", {
