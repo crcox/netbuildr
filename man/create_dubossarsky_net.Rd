@@ -7,9 +7,9 @@
 create_dubossarsky_net(cues, targets)
 }
 \arguments{
-\item{.data}{The association dataframe}
+\item{cues}{A factor of character vector. Unique values determine network nodes}
 
-\item{condition}{A string ("toddler" or "adult")}
+\item{targets}{A factor of character vector. \code{cue -> target} associations determine network edges.}
 }
 \value{
 An igraph object representing weighted directed network.
@@ -30,7 +30,7 @@ these associations are shared over all the cue words.
 "\eqn{w_{i,j}} is an edge's weight in the one-mode graph directed from node i
 to node j. P is the number of shared associations between cue words i and j.
 w_{i,p} is the number of times cue i produced p as an associate. N_p is the
-number of cue words that produced p. Cue words ideiosyncratic responses were
+number of cue words that produced p. Cue words idiosyncratic responses were
 removed prior to projection."
 
 See \code{bipartite_to_unipartite} for implementation details.

@@ -13,8 +13,8 @@ bipartite_to_unipartite(bpg)
 A cue by cue matrix representing a directed unipartite graph.
 
 This projection can be efficiently represented as the inner product of the
-bipartiate graph and projection matrix. The projection matrix has the same
-dimensions as the bipartitate graph, but transposed. To compose the
+bipartite graph and projection matrix. The projection matrix has the same
+dimensions as the bipartite graph, but transposed. To compose the
 projection matrix, we first count the number of cues for which each response
 was provided. Then, replicate this to fill the whole matrix (i.e., repeat
 this vector once per cue, and reshape into a response by cue matrix).
