@@ -1,15 +1,17 @@
 Package: netbuildr
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Build adjacency matrices
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Christopher R. Cox
+Maintainer: Christopher R. Cox <chriscox@lsu.edu>
+Description: Build adjacency matrices, which specify nodes and edges in a graph
+    or network, from word association data or transcripts/text corpora.
+License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
+Imports:
+    tidyr
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2

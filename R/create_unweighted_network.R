@@ -7,9 +7,12 @@
 #' @return A square adjacency matrix representing an unweighted directed
 #'   network. Directed connections from row to column node.
 #'
-#' For the associative networks, a pair of cues was connected by a directed link from
-#' the cue word to the target word if that cue-target relationship was reported
-#' in the association norms.
+#' For the associative networks, a pair of cues was connected by a directed link
+#' from the cue word to the target word if that cue-target relationship was
+#' reported in the association norms.
+#'
+#' The rows and columns of the of the returned adjacency matrix are sorted in
+#' ascending order.
 #'
 #' @export
 create_unweighted_network <- function(cues, targets) {
